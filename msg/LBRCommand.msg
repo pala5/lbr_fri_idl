@@ -6,6 +6,14 @@
 #  * torque [Nm]
 #  * wrench [N/Nm]
 
+#  * BooleanIOValue [bool] 
+#  * DigitalIOValue [bool] 
+#  * AnalogIOValue [#] 
+
+
 float64[7] joint_position
 float64[7] torque
 float64[6] wrench
+bool[] boolean_io_value
+uint64[] digital_io_value
+float64[] analog_io_value
