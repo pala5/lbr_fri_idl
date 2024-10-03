@@ -23,9 +23,9 @@
 #  * ipo_joint_position [rad]
 #  * tracking_performance [a.u.]
 #
-#  * boolean_io_value [bool]
-#  * digital_io_value [bool]
-#  * analog_io_value [#]
+#  * measured_boolean_io_value [bool]
+#  * measured_digital_io_value [#]  - Beckoff EL 1809 (16 Digital Inputs) 
+#  * measured_analog_io_value [#]
 
 
 float64 sample_time
@@ -49,6 +49,6 @@ float64[7] external_torque
 float64[7] ipo_joint_position
 float64 tracking_performance
 
-bool[] boolean_io_value
-uint64[] digital_io_value
-float64[] analog_io_value
+# bool[] measured_boolean_io_value
+uint64[16] measured_digital_io_value 
+# float64[] measured_analog_io_value
